@@ -1,0 +1,113 @@
+/* Reset */
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* General */
+body{
+    min-width: 290px;
+    color: #4d4e53;
+    background-color: #ffffff;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5; 
+}
+
+
+/* Typography */ 
+
+
+/* Layout */
+.main-section{
+    padding: 5px 20px;
+}
+header{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+article{
+    padding: 10px;
+}
+article > p{
+    margin-bottom: 10px;
+}
+article > ul{
+    margin-left: 15%;
+}
+article > ul >li{
+    margin-bottom: 10px;
+}
+code{
+    display: block;
+    width: 100%;
+    padding: 15px 45px 15px 10px;
+    text-align: left;
+    background-color: azure;
+}
+
+
+/* Navigation */
+nav > header{
+    font-size: 25px;
+    text-align: center;
+}
+nav > ul{
+    list-style-type: none;
+    border: 1px solid #4d4e53;
+    border-top: 2px solid #4d4e53;
+    overflow-y: auto;
+    height: 200px;
+    margin: 0 5px;
+}
+nav > ul >li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #4d4e53;
+}
+nav > ul >li > a{
+    text-decoration: none;
+    color: #4d4e53;
+}
+
+
+/* UI elements */
+
+/* Forms */
+
+/* Media Queries */
+@media (min-width: 815px){
+    nav{
+        min-width: 290px;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        border-right: 3px solid #dddddd;
+        padding: 0;
+    }
+    nav > ul{
+        margin: 0;
+        border-top: 2px solid #4d4e53;
+        border-bottom: 2px solid #4d4e53;
+        height: 88%;
+        overflow-y: auto;
+    }
+    nav > header{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    main{
+        position: absolute;
+        margin-left: 310px;
+        padding: 20px;
+        margin-bottom: 110px;
+
+    }
+}
+
+/* 
+break points:
+    815px
+*/
